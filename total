@@ -1,0 +1,11 @@
+#!/bin/sh
+fecha=$(date "+%Y-%m-%d")
+fecha2=$(date "+%H-%M-%S")
+ruta="/home/vagrant/backups"
+
+if [ -e $ruta/total.st ]
+then
+rm $ruta/total.st
+fi
+
+tar -czf $ruta/copia-total'_'$fecha'_'$fecha2".tar.gz" --absolute-names -g $ruta/total.st /var/www/html
