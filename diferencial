@@ -1,0 +1,8 @@
+#!/bin/sh
+fecha=$(date "+%Y-%m-%d")
+fecha2=$(date "+%H-%M-%S")
+ruta="/home/vagrant/backups"
+
+cp $ruta/total.st $ruta/diferencial.st
+tar -jcvf $ruta/copia-diferencial'_'$fecha'_'$fecha2".tar.bz2" --absolute-names -g $ruta/diferencial.st /var/www/html/*
+cp $ruta/diferencial.st $ruta/incremental.st
