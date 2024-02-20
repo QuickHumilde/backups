@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo rm /home/vagrant/backups/copia*
