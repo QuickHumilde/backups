@@ -1,0 +1,9 @@
+#!/bin/sh
+fecha=$(date "+%Y-%m-%d")
+fecha2=$(date "+%H-%M-%S")
+ruta="/home/vagrant/backups"
+if [ ! -d /home /vagrant/backups ]
+then
+      mkdir /home/vagrant/backups
+fi
+tar -cvf $ruta/copia_incremental'_'$fecha'_'$fecha2".tar.gz" -g $ruta/inc.st --absolute-names $ruta/inc.st /var/www/html/*
