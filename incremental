@@ -2,7 +2,7 @@
 fecha=$(date "+%Y-%m-%d")
 fecha2=$(date "+%H-%M-%S")
 ruta="/home/vagrant/backups"
-if [ ! -d /home /vagrant/backups ]
+if [ ! -d /home/vagrant/backups ]
 then
       mkdir /home/vagrant/backups
 fi
