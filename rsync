@@ -5,7 +5,5 @@ then
       mkdir /home/vagrant/backups
 fi
 
-rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/copia* vagrant@192.168.120.2:/home/vagrant/backups
-rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/incremental.st vagrant@192.168.120.2:/home/vagrant/backups
-rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/total.st vagrant@192.168.120.2:/home/vagrant/backups
-rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/diferencial.st vagrant@192.168.120.2:/home/vagrant/backups
+rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/backups/copia* vagrant@192.168.120.2:/home/vagrant/backups
+rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/backups/*.st vagrant@192.168.120.2:/home/vagrant/backups
