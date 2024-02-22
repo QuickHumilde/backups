@@ -6,4 +6,4 @@ if [ ! -d /home/vagrant/backups ]
 then
       mkdir /home/vagrant/backups
 fi
-tar -cvf $ruta/copia_incremental'_'$fecha'_'$fecha2".tar.gz" -g $ruta/incremental.st --absolute-names $ruta/incremental.st /var/www/html/*
+tar -cvf $ruta/copia-incremental'_'$fecha'_'$fecha2".tar.gz" -g $ruta/incremental.st --absolute-names $ruta/incremental.st /var/www/html/*
