@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo tar -xpf $1 -C /
