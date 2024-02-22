@@ -1,0 +1,2 @@
+#!/bin/sh
+find /home/vagrant/copia_total* -ctime +10 -type f -exec rm {} \:
