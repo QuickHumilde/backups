@@ -1,0 +1,2 @@
+#!/bin/sh
+find /home/vagrant/copia_diferencial* -ctime +7 -type f -exec rm {} \:
