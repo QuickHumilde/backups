@@ -1,0 +1,2 @@
+#!/bin/sh
+find /home/vagrant/copia_incremental* -ctime +5 -type f -exec rm {} \:
