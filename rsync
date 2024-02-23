@@ -1,9 +1,4 @@
 #!/bin/sh
 
-if [ ! -d /home/vagrant/backups ]
-then
-      mkdir /home/vagrant/backups
-fi
-
 rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/backups/copia* vagrant@192.168.120.2:/home/vagrant/backups
 rsync -avz -e "ssh -i /vagrant/.vagrant/machines/lan/virtualbox/private_key" /home/vagrant/backups/*.st vagrant@192.168.120.2:/home/vagrant/backups
